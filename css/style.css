@@ -1,9 +1,14 @@
-.content {
-  padding: 1rem;
-  border: 1px solid lightgrey;
+body {
+  background: #ebebeb;
 }
 
-.content-item {
-  text-transform: uppercase;
-  color: green;
+.container {
+  display: flex;
+}
+
+.product {
+  background: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
 }

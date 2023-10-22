@@ -1,52 +1,21 @@
 # JavaScript 1 - Module 1
 
-## Lesson Task 2 Questions
+## Lesson Task 3
 
-### Question 1
+The `index.html` file links to `products.js`. Loop through the array in `products.js` and display each object using HTML.
 
-Select the `h3` element and change its value to `Hello` instead of `Welcome`.
+Provide a default value for the `price` property if it is missing.
 
+If the product is sold out, display its name in red otherwise display it in green.
 
-### Question 2
+Change the properties in the objects in the array to test your code.
 
-Select all the `h4` elements on the page and change their `margin-bottom` style to `-20px`.
+---
 
+`product.html` links to `product.js`. Display each property of the object in `product.js` using HTML.
 
-### Question 3
+Provide a default value for the `price` property if it is missing.
 
-Set the background colour of the second `h4` element to `red`.
+If the product is on sale, underline the name.
 
-
-### Question 4
-
-Set the font size of the first paragraph element on the page to `24px` and its color to `blue`.
-
-
-### Question 5
-
-Add `span` tags around the content of the third paragraph element on the page. 
-
-
-### Question 6
-
-Add a new paragraph to the div with a class of `content`. Add the paragraph after the others.
-
-
-### Question 7
-
-Add a new class called `content-item` to each paragraph in the div with a class of `content`.
-
-
-### Question 8
-
-Select the `ul` element on the page by its id and add a new list item to the beginning of the list.
-
-
-### Question 9
-
-Programmatically remove the class from the `ul` element.
-
-
-### Question 10
-
-Hide the element with the id of `hide`.
+Change the properties in the object to test your code.
