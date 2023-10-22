@@ -1,0 +1,1 @@
+const someThing = 0;
