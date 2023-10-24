@@ -23,6 +23,7 @@ body {
   box-shadow: black 1px 1px 4px 2px;
   text-indent: 1em;
   gap: 10px;
+  line-height: 2;
 }
 
 .product {
