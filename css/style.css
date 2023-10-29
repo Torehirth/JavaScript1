@@ -10,24 +10,3 @@ body {
   background: #ebebeb;
   max-width: 1440px;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.itemcontainer {
-  display: flex;
-  flex-direction: column;
-  box-shadow: black 1px 1px 4px 2px;
-  text-indent: 1em;
-  gap: 10px;
-}
-
-.product {
-  background: white;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem;
-}
