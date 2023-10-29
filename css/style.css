@@ -9,25 +9,24 @@ body {
   padding: 0 20px;
   background: #ebebeb;
   max-width: 1440px;
-}
-
-.container {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 3em;
 }
 
-.itemcontainer {
+.games-container {
   display: flex;
   flex-direction: column;
-  box-shadow: black 1px 1px 4px 2px;
-  text-indent: 1em;
+  gap: 1em;
+}
+
+.total,
+#name,
+.game-container {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-}
-
-.product {
-  background: white;
-  border-radius: 1rem;
-  padding: 1rem;
-  margin: 1rem;
+  box-shadow: black 1px 1px 6px 1px;
+  text-transform: capitalize;
+  padding: 5px 10px;
 }
