@@ -10,7 +10,7 @@ Convert the following following code to use the `addEventListener` method:
 const btn = document.querySelector(".btn");
 
 btn.onclick = function () {
-    console.log("I'm a button");
+  console.log("I'm a button");
 };
 ```
 
