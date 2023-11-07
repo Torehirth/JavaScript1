@@ -1,13 +1,30 @@
-# JavaScript 1 - Module 2
+# JavaScript 1 - Module 3
 
-## Lesson Task 4 Question
+## Lesson Task 1 Questions
 
-Using the HTML provided write code that does the following:
+### Question 1
 
-- when the button is pressed and held down start a counter that increments by 1 every second
-- When the button is released stop the counter and create an amount of text boxes equal to the counter value
-- when the counter is pressed and held down again set the counter to 0, clear the text inputs and repeat the previous step
+Write code that checks if the below variable is truthy, log the string "truthy" if it is, and "falsy" if not.
 
-Example:
+```js
+const menuIsOpen = false;
+```
 
-<p align="center"><img src="example-answer.gif" alt="Answer example"></p>
+### Question 2
+
+Based on the below URL, what are the different querystring parameters and their respective values?
+
+```
+https://api.rawg.io/api/games?platforms=4&genres=action&publishers=354
+```
+
+### Question 3
+
+- Create an async function called `getCatFacts`.
+- Inside the function make an API call to the below URL using async/await, and save it to a variable called `response`.
+- Create a variable called `results` where you await the json of your response variable.
+- Console.log the length of `results`.
+
+```
+https://api.noroff.dev/api/v1/cat-facts
+```
