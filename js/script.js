@@ -1,40 +1,26 @@
 // // Module 2 Lesson 3
 
-// Question 1:
+// Question:
 
-// const btn = document.querySelector(".btn");
+// when the button is pressed and held down start a counter that increments by 1 every second
+// When the button is released stop the counter and create an amount of text boxes equal to the counter value
+// when the counter is pressed and held down again set the counter to 0, clear the text inputs and repeat the previous step
 
-// btn.onclick = function () {
-//     console.log("I'm a button");
-// };
+const countButton = document.querySelector(".toolbar button");
+const countField = document.querySelector(".count");
+const inputContainer = document.querySelector(".inputs");
 
-// const btn = document.querySelector("button.btn");
+// const intervalId = setInterval(startCounter, intervalTime);
 
-// btn.addEventListener("click", function () {
-//   const message = `I'm a button`;
-//   console.log(message);
-// });
+countButton.addEventListener("click", function () {
+  const intervalTime = 1000;
+  let count = 0;
 
-// Question 2:
+  function startCounter() {
+    count++;
 
-// retrieve length of letters in form.
-// when clicking button, update count value in html.
-// remove all trailing and leading spaces on the input value - trim().
+    console.log(count);
+  }
 
-const submitButton = document.querySelector("form button");
-const inputField = document.querySelector("input");
-const countContainer = document.querySelector("b.count");
-
-function characterCount() {
-  const length = inputField.value.trim().length;
-  console.log(length);
-
-  // If character count should be updated automaticly when keyup event is triggered.
-  // countContainer.innerHTML = length;
-}
-
-inputField.addEventListener("keyup", characterCount);
-submitButton.addEventListener("click", function () {
-  const length = inputField.value.trim().length;
-  countContainer.innerHTML = length;
+  const intervalId = setInterval(startCounter, intervalTime);
 });
