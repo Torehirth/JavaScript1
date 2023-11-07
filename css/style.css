@@ -25,17 +25,6 @@ button:active {
   box-shadow: none;
 }
 
-input {
-  display: block;
-  border: none;
-  padding: 1rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-  background: #ebebeb;
-  width: 100%;
-  border-radius: 0.5rem;
-}
-
 .container {
   max-width: 1000px;
   background: white;
@@ -52,4 +41,24 @@ input {
 
 .counter {
   font-size: 5rem;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+input {
+  display: block;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  background: #ebebeb;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.inputs p {
+  margin: 0.5em 0 1.25em 0;
 }
