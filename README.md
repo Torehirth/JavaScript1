@@ -1,23 +1,13 @@
 # JavaScript 1 - Module 2
 
-## Lesson Task 3 Questions
+## Lesson Task 4 Question
 
-### Question 1
+Using the HTML provided write code that does the following:
 
-Convert the following following code to use the `addEventListener` method:
+-   when the button is pressed and held down start a counter that increments by 1 every second
+-   When the button is released stop the counter and create an amount of text boxes equal to the counter value
+-   when the counter is pressed and held down again set the counter to 0, clear the text inputs and repeat the previous step
 
-```js
-const btn = document.querySelector(".btn");
+Example:
 
-btn.onclick = function () {
-  console.log("I'm a button");
-};
-```
-
-### Question 2
-
-Add a click event using `addEventListener` to the second button.
-
-In the event's function, display the character count from the input in the `b.count` element.
-
-Make sure to remove all trailing and leading spaces (spaces at the beginning and end of the input's value).
+<img src="example-answer.gif" alt="Answer example">
