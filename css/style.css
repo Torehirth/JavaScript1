@@ -4,5 +4,25 @@
 
 body {
   background: #ebebeb;
-  font-family: sans-serif;
+}
+
+h1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.fact-container {
+  text-align: center;
+  padding: 2em 0.5em;
+  text-transform: capitalize;
+  border: solid 1px black;
+  height: 5em;
 }
