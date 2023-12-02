@@ -15,34 +15,37 @@ console.log(greet());
 
 /* <div class="class">value</div> */
 
-// resusable function that creates div element with classname and innervalue.
-function divCreator(className, innerValue) {
-  return `<div class="${className}">${innerValue}</div>`;
-}
+// --------Answer below------------
 
-// Resusable function that changes the classname and innerHTML.
-function createMessage(type, message) {
-  const html = `<div class="message ${type}">${message}</div>`;
+// // resusable function that creates div element with classname and innervalue.
+// function divCreator(className, innerValue) {
+//   return `<div class="${className}">${innerValue}</div>`;
+// }
 
-  return html;
-}
-const messageContainer = document.querySelector(".message-container");
+// Resusable function that changes the classname and innerHTML, with default values in case undefined.
+// function createMessage(type = "success", message = "no message") {
+//   const html = `<div class="message ${type}">${message}</div>`;
 
-const message = createMessage("error", "faulty value");
+//   return html;
+// }
+// const messageContainer = document.querySelector(".message-container");
 
-messageContainer.innerHTML = message;
+// const message = createMessage("error", "faulty value");
 
-// Or another way of creating this function below:
+// messageContainer.innerHTML = message;
 
-// const createMessage = (type, innerText) => {
-//   const className = document.querySelector(".message");
+// Or another way of creating this function below with arrow function syntax:
 
-//   className.classList.add(type);
+const createMessage = (type = "success", innerText = "no message") => {
+  const className = document.querySelector(".message");
 
-//   className.innerText = innerText;
-// };
+  className.classList.add(type);
 
-// createMessage("success", "correct value");
+  className.innerText = innerText;
+};
+
+// default values will execute if parameters is empty.
+createMessage("success", "correct value");
 
 // Question 3:
 // Convert the below API call to use a try-catch-finally statement.
