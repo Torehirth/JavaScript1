@@ -1,19 +1,17 @@
-# JavaScript 1 - Module 3
+# JavaScript 1 - Module 4
 
-## Lesson Task 4 Questions
+## Lesson Task 1 Question
 
-### Question 1
+Make a call to the following endpoint:
 
-Add headers to the below API call.
-
-You can choose whether to create a variable for the headers object seperately from the call and pass the variable in as the second parameter, or pass the headers object in directly.
-
-```js
-const API_URL = "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat";
-
-async function callUrbanDictionary() {
-  const response = await fetch(API_URL);
-  const results = await response.json();
-  console.log(results);
-}
 ```
+https://raw.githubusercontent.com/bttmly/nba/master/data/teams.json
+```
+
+Display the team name and city of the first 15 results, but exclude any team whose name begins with `c`.
+
+There will be a maximum of 15 results displayed if no teams' names begin with "C", and less than 15 displayed if there are teams whose names begin with "C".
+
+---
+
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith" target="_blank">The `startsWith` method documentation.</a>

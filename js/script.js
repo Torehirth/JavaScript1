@@ -1,25 +1,13 @@
-// Module 3 lesson 4
+// Module 4 lesson 1
 
 // Question 1:
 
-// Add headers to the below API call.
+// Make a call to the following endpoint:
 
-// You can choose whether to create a variable for the headers object seperately from the call and pass the variable in as the second parameter, or pass the headers object in directly.
+// https://raw.githubusercontent.com/bttmly/nba/master/data/teams.json
 
-const options = {
-  method: "get",
-  headers: {
-    "x-rapidAPI-key": "882b6ae104msh1a7305883509496p127e5bjsn4c9c2e73ef21",
-    "x-rapidAPI-host": "mashape-community-urban-dictionary.p.rapidapi.com",
-  },
-};
+// Display the team name and city of the first 15 results, but exclude any team whose name begins with c.
 
-const API_URL = "https://mashape-community-urban-dictionary.p.rapidapi.com/define?term=wat";
+// There will be a maximum of 15 results displayed if no teams' names begin with "C", and less than 15 displayed if there are teams whose names begin with "C".
 
-async function callUrbanDictionary() {
-  const response = await fetch(API_URL, options);
-  const results = await response.json();
-  console.log(results);
-}
-
-callUrbanDictionary();
+const URL = "https://raw.githubusercontent.com/bttmly/nba/master/data/teams.json";
