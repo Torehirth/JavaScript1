@@ -1,30 +1,34 @@
 # JavaScript 1 - Module 3
 
-## Lesson Task 1 Questions
+## Lesson Task 2 Questions
 
 ### Question 1
 
-Write code that checks if the below variable is truthy, log the string "truthy" if it is, and "falsy" if not.
+Give the below function's `name` parameter a default value of `"John"`
 
 ```js
-const menuIsOpen = false;
+function greet(name) {
+    return `Hello ${name}!`;
+}
 ```
 
 ### Question 2
 
-Based on the below URL, what are the different querystring parameters and their respective values?
+Create a reusable function that accepts two parameters, then returns a dynamic HTML `<div>` element.  
+The `<div>` it creates should insert one of the parameters as a class, and the other as the inner value. Similar to the below HTML:
 
+```html
+<div class="class">value</div>
 ```
-https://api.rawg.io/api/games?platforms=4&genres=action&publishers=354
-```
 
-### Question 3
+### Question 3:
 
-- Create an async function called `getCatFacts`.
-- Inside the function make an API call to the below URL using async/await, and save it to a variable called `response`.
-- Create a variable called `results` where you await the json of your response variable.
-- Console.log the length of `results`.
+Convert the below API call to use a try-catch-finally statement.
 
-```
-https://api.noroff.dev/api/v1/cat-facts
+```js
+async function getFact() {
+    const response = await fetch("https://api.noroff.dev/api/v1/cat-facts");
+    const results = await response.json();
+    console.log(results[8].text);
+}
 ```
