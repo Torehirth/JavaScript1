@@ -1,11 +1,14 @@
 # JavaScript 1 - Module 4
 
-## Lesson Task 2 Question
+## Lesson Task 3 Question
 
-Make a call to the following endpoint:
+- When a user selects a number from the select box, build a number of anchor tags (`a` elements) that matches the selected number
+- the anchor tags should link to the details page with the id in the query string
+- on the details page retrieve the id from the query string
+- add the id to the URL below, make an API call using the final url and display the title and author of the selected book
 
 ```
-https://api.noroff.dev/api/v1/old-games/2
+https://api.noroff.dev/api/v1/books
 ```
 
-Display the name, description and image of the game returned.
+<img src="example.gif" />

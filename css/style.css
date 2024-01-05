@@ -1,43 +1,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
+:root {
+  --primary-colour: #1a8769;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: #e8e8e8;
+  background: #ebebeb;
   font-family: "Open Sans", sans-serif;
 }
 
+p {
+  margin-top: 0;
+}
+
+select {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
-  position: relative;
+  background: white;
+  padding: 1rem;
+  height: 90vh;
 }
 
-.details .name {
-  margin-bottom: 0.7em;
-  text-align: center;
+.list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.details .image {
-  margin-bottom: 1em;
-  height: 290px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: contain;
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 200px;
+  background: #ebebeb;
+  margin: 1rem;
+  text-decoration: none;
+  color: var(--primary-colour);
+  font-size: 2rem;
 }
 
-.details .status {
-  margin-bottom: 1em;
-  font-style: italic;
-  font-weight: bold;
-  text-align: center;
+.back {
+  color: var(--primary-colour);
+  display: inline-block;
+  margin-bottom: 1rem;
 }
 
 .loader {
   border: 16px solid #f3f3f3;
-  border-top: 16px solid darkslategray;
+  border-top: 16px solid var(--primary-colour);
   border-radius: 100%;
   width: 60px;
   height: 60px;
